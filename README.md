@@ -1,7 +1,5 @@
 # Microblog
 
-![screenshot](screenshot.png)
-
 ## Description
 
 Make a web application that allows you write and delete short messages. When you click "Submit", it will refresh and show a list of messages you wrote.
@@ -48,6 +46,6 @@ Make a web application that allows you write and delete short messages. When you
   * It should take the message id as an argument
   * It should remove the message with the given id (do something like `messages.remove(id - 1)`)
   * It should return a redirect to `/`
+![screenshot1.png](https://tiy-learn-content.s3.amazonaws.com/1433d999-screenshot1.png)
 
-![screenshot 1](screenshot1.png)
-![screenshot 2](screenshot2.png)
+![screenshot2.png](https://tiy-learn-content.s3.amazonaws.com/7b6d5bf7-screenshot2.png)
