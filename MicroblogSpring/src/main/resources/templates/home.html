@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-{{#username}}
+{{#userName}}
 <form action="/addmessage" method="post">
     <input type="text" placeholder="enter a message" name="message">
     <button type="submit">post</button>
 </form>
-Messages from {{username}}
+Messages from {{userName}}
 <ol>
     {{#messages}}
-    <li>{{message}}<button type="submit">Delete</button> </li>
+    <li>{{message}}</li><button type="submit">Delete</button>
     {{/messages}}
 </ol>
-{{/username}}
+{{/userName}}
 
-{{^username}}
+{{^userName}}
 <form action="/login" method="post">
     <input type="text" placeholder="enter your name" name="userName"/>
     <button type="submit">login</button>
 </form>
-{{/username}}
+{{/userName}}
 </body>
 </html>
