@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+{{#userName}}
+<form action="/addmessage" method="post">
+    <input type="text" placeholder="enter a message" name="message">
+    <button type="submit">post</button>
+</form>
+Messages from {{userName}}
+<ol>
+    {{#messages}}
+    <li>{{message}}</li><button type="submit">Delete</button>
+    {{/messages}}
+</ol>
+{{/userName}}
+
+{{^userName}}
+<form action="/login" method="post">
+    <input type="text" placeholder="enter your name" name="userName"/>
+    <button type="submit">login</button>
+</form>
+{{/userName}}
+</body>
+</html>
