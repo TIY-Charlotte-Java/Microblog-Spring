@@ -6,4 +6,6 @@ package com.theironyard.clt;
 public class Messages {
     int id;
     String message;
+
+
 }

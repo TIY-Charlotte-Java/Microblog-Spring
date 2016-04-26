@@ -24,5 +24,11 @@ public class MicroblogSpringController {
         session.setAttribute("userName", userName);
         return "redirect:/";
     }
-
+    @RequestMapping(path = "/addmessage", method = RequestMethod.POST)
+    public String addmessage(HttpSession session, String message) {
+        session.setAttribute("message", message);
+        Messages log = new Messages;
+        messages.add(log);
+        return "reditect:/";
+    }
 }
