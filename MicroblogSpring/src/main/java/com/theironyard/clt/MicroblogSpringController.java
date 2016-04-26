@@ -1,6 +1,10 @@
 package com.theironyard.clt;
 
-import com.sun.tools.internal.ws.processor.model.Model;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import javax.servlet.http.HttpSession;
 
 
 public class MicroblogSpringController {
@@ -15,4 +19,5 @@ public class MicroblogSpringController {
         session.setAttribute("userName", userName);
         return "redirect:/";
     }
+
 }
